@@ -1,0 +1,73 @@
+/* custom-prism.css */
+
+/* Fond sombre */
+pre[class*="language-"] {
+    background-color: #1e1e1e;
+    text-shadow: none;
+    color: #9cdcfe;
+}
+
+/* Commentaires */
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #6a9955;
+}
+
+/* Chaînes de caractères */
+.token.string,
+.token.atrule,
+.token.attr-value {
+    color: #ce9178;
+}
+
+.token.keyword {
+    color: #d01ce0;
+}
+
+.token.attr-name {
+    color: #9cdcfe
+}
+/* Balises */
+.token.tag,
+.token.tag .token.punctuation {
+    color: #569cd6;
+}
+
+/* Opérateurs */
+.token.operator {
+    color: #d4d4d4;
+    background: none;
+}
+
+/* Numéros */
+.token.number {
+    color: #b5cea8;
+}
+
+/* Fonctions */
+.token.function, .token.function-variable {
+    color: #dcdcaa;
+}
+
+/* Punctuation */
+.token.punctuation {
+    color: #f5d000;
+}
+
+/* Variables */
+.token.variable {
+    color: #9cdcfe;
+}
+
+/* Sélecteurs */
+.token.selector {
+    color: #d7ba7d;
+}
+
+/* Parameter */
+.token.parameter {
+    color: #9cdcfe;
+}

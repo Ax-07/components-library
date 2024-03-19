@@ -1,0 +1,20 @@
+@import './global/theme.scss';
+@import './global/prism.scss';
+@import './global/mixin.scss';
+@import './global/reset.scss';
+@import './global/button.scss';
+
+@import './pages/components.scss';
+
+@import "prismjs/themes/prism.css";
+
+@import '../layouts/header/header.scss';
+@import '../layouts/footer/footer.scss';
+
+@import '../components/hero/simpleHero/simpleHero.scss';
+@import '../components/icons/icons.scss';
+
+@import '../components/navigation/socialNav/socialNav.scss';
+@import '../components/navigation/navbar/navbar.scss';
+
+@import '../components/tabs/tabs.scss';

@@ -1,0 +1,52 @@
+.tabs {
+    position: relative;
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    
+    &__nav {
+        position: sticky;
+        z-index: 1;
+        top: 102px;
+        left: 0;
+        display: flex;
+        width: 100%;
+        max-height: calc(100vh - 56px);
+        padding-left: 2rem;
+    }
+
+    &__list {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        overflow: auto;
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 200px;
+            padding: 0px 56px 56px 0 ;
+            max-height: 100vh;
+            overflow: auto;
+        }
+    }
+
+    &__item {
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-dark;
+            color: $color-light;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 1rem;
+    }
+}
