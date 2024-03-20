@@ -1,22 +1,22 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Prism from "prismjs";
 import "prismjs/components/prism-scss"; // Import JSX language
 import "prismjs/themes/prism.css"; // Importez le fichier CSS de Prism
 import PropTypes from "prop-types";
+import { icons } from "../icons/icons";
 
 export const CodeBlockCss = ({ code }) => {
   const codeRef = useRef(null);
-
+  const [copySuccess, setCopySuccess] = useState("");
   const html = Prism.highlight(code, Prism.languages.scss, "scss");
 
   const handleCopy = () => {
-    console.log();
     if (codeRef.current) {
       navigator.clipboard
         .writeText(codeRef.current.innerText)
         .then(() => {
-          alert("Code copied to clipboard!");
-          console.log("code copier!");
+          setCopySuccess("Copié!");
+          setTimeout(() => setCopySuccess(""), 2000); // Réinitialise 'copySuccess' après 2 secondes
         })
         .catch((error) => {
           console.error("Failed to copy code to clipboard: ", error);
@@ -27,10 +27,10 @@ export const CodeBlockCss = ({ code }) => {
 
   return (
     <>
-      <pre className="language-jsx">
-      <button className="copy-button" onClick={handleCopy}>
-        Copy code
-      </button>
+      <pre className="language-scss">
+      <span className="copy-button" onClick={handleCopy}>
+          {copySuccess || icons.copy}
+        </span>
         <code ref={codeRef} dangerouslySetInnerHTML={{ __html: html }} />
       </pre>
     </>

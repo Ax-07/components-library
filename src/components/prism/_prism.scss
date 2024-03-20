@@ -2,9 +2,19 @@
 
 /* Fond sombre */
 pre[class*="language-"] {
-    background-color: #1e1e1e;
+    background-color: #333;
     text-shadow: none;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 1rem 2rem;
+}
+/* jsx */
+pre.language-jsx {
     color: #9cdcfe;
+}
+/* scss */
+pre.language-scss {
+    color: #ce9178;
 }
 
 /* Commentaires */
@@ -22,6 +32,10 @@ pre[class*="language-"] {
 .token.attr-value {
     color: #ce9178;
 }
+.token.class-name {
+    color: #76c452;
+
+}
 
 .token.keyword {
     color: #d01ce0;
@@ -31,8 +45,7 @@ pre[class*="language-"] {
     color: #9cdcfe
 }
 /* Balises */
-.token.tag,
-.token.tag .token.punctuation {
+.token.tag {
     color: #569cd6;
 }
 
@@ -54,7 +67,7 @@ pre[class*="language-"] {
 
 /* Punctuation */
 .token.punctuation {
-    color: #f5d000;
+    color: #999;
 }
 
 /* Variables */
@@ -70,4 +83,13 @@ pre[class*="language-"] {
 /* Parameter */
 .token.parameter {
     color: #9cdcfe;
+}
+
+/* property */
+.token.property {
+    color: #9cdcfe;
+}
+
+.token.important {
+    color: #569cd6;
 }

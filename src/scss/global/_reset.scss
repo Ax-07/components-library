@@ -49,14 +49,10 @@ ul {
     width: 7px;
   }
   *::-webkit-scrollbar-thumb {
-    background: $color-dark;
+    background: $color-dark-gray;
     border-radius: 5px;
-    border: 10px solid $color-dark;
+    border: 2px solid $color-dark-gray;
   }
   *::-webkit-scrollbar-track {
     // background-color: $color-light;
-  }
-
-  pre[class*=language-] {
-    margin: 0;
   }

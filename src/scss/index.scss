@@ -1,5 +1,4 @@
 @import './global/theme.scss';
-@import './global/prism.scss';
 @import './global/mixin.scss';
 @import './global/reset.scss';
 @import './global/button.scss';
@@ -7,6 +6,7 @@
 @import './pages/components.scss';
 
 @import "prismjs/themes/prism.css";
+@import '../components/prism/prism.scss';
 
 @import '../layouts/header/header.scss';
 @import '../layouts/footer/footer.scss';
